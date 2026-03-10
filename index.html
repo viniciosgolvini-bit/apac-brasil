@@ -89,8 +89,8 @@
             const precoDiesel = parseFloat(document.getElementById('preco').value);
 
             try {
-                // Se for hospedar na internet, troque '127.0.0.1' pelo link do seu servidor (ex: sua-api.render.com)
-                const response = await fetch('http://127.0.0.1:8000/calcular-real', {
+                
+                const response = await fetch('https://apac-brasil.onrender.com/', {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({
@@ -162,4 +162,5 @@
         }
     </script>
 </body>
+
 </html>
